@@ -10,7 +10,7 @@ import mime from "mime";
 dotenv.config();
 
 const app = express()
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const url = "mongodb+srv://tabranchaud:tb@cluster0.h4cuw.mongodb.net/";
 const connection = new MongoClient(url);
