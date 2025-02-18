@@ -12,7 +12,7 @@ export async function submit(){
     const body = JSON.stringify(json)
 
     document.getElementById("loginForm").reset()
-    const results = fetch("http://localhost:3000/login", {
+    const results = fetch("https://a4-thomasbranchaud-backend.onrender.com/login", {
         method: 'POST',
         body,
         headers: {"Content-Type": "application/json"}

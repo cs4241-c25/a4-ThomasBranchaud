@@ -8,7 +8,7 @@ import resultInfo from "../public/Scripts/resultsInfo.js";
 function HomePage(){
 
     useEffect(async () => {
-        const results = await fetch('http://localhost:3000/user', {
+        const results = await fetch('https://a4-thomasbranchaud-backend.onrender.com/user', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'}
         })

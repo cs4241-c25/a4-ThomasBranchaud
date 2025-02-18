@@ -3,7 +3,7 @@ export async function updateClicked(){
         username: localStorage.getItem("username")
     }
     const body = JSON.stringify(json)
-    const response = await fetch("http://localhost:3000/results", {
+    const response = await fetch("https://a4-thomasbranchaud-backend.onrender.com/results", {
         method: 'POST',
         body,
         headers: {"Content-Type": "application/json"}
@@ -82,7 +82,7 @@ export async function deleteClicked(){
         username: localStorage.getItem("username")
     }
     const body = JSON.stringify(json)
-    const response = await fetch("http://localhost:3000/results", {
+    const response = await fetch("https://a4-thomasbranchaud-backend.onrender.com/results", {
         method: 'POST',
         body,
         headers: {"Content-Type": "application/json"}
@@ -129,7 +129,7 @@ const removeEntry = async function (){
 
     const body = JSON.stringify(json);
 
-    const response = await fetch("http://localhost:3000/delete",{
+    const response = await fetch("https://a4-thomasbranchaud-backend.onrender.com/delete",{
         method: 'POST',
         body,
         headers: {"Content-Type": "application/json"}
@@ -218,7 +218,7 @@ const submitModifiedEntry = async function(){
 
     const body = JSON.stringify(json)
 
-    await fetch ("http://localhost:3000/modify", {
+    await fetch ("https://a4-thomasbranchaud-backend.onrender.com/modify", {
         method: 'POST',
         body,
         headers: {"Content-Type": "application/json"}

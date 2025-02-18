@@ -1,5 +1,5 @@
 async function resultInfo () {
-    const user = await fetch("http://localhost:3000/user", {
+    const user = await fetch("https://a4-thomasbranchaud-backend.onrender.com/user", {
         method: 'POST',
         headers: {"Content-Type": "application/json"}
     })
@@ -14,7 +14,7 @@ async function resultInfo () {
     }
     const body = JSON.stringify(json)
 
-    const response = await fetch ("http://localhost:3000/results",{
+    const response = await fetch ("https://a4-thomasbranchaud-backend.onrender.com/results",{
         method : 'POST',
         body,
         headers: {"Content-Type": "application/json"}

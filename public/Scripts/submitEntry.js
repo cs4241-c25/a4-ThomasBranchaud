@@ -23,7 +23,7 @@ async function submitEntry() {
 
     const body = JSON.stringify(json)
 
-    const response = await fetch( "http://localhost:3000/add", {
+    const response = await fetch( "https://a4-thomasbranchaud-backend.onrender.com/add", {
         method:'POST',
         body,
         headers: {"Content-Type": "application/json"}

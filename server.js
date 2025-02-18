@@ -84,7 +84,7 @@ app.post('/user', (req, res) => {
 app.get('/auth/github/callback*', passport.authenticate('github', {session: true, failureRedirect: '/login'}),
     function (req, res){
     console.log("Logged")
-    res.redirect("http://localhost:5173/homePage.html")
+    res.redirect("https://a4-thomasbranchaud.onrender.com/homePage.html")
 });
 
 app.get('/auth/github', passport.authenticate('github', { scope: ["user:email"] }));
