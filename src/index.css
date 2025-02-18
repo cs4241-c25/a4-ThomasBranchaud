@@ -29,6 +29,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: center;
+}
+
+.mainForm {
+  margin-left: 250px;
 }
 
 h1 {

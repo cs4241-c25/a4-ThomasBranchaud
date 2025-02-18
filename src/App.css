@@ -73,15 +73,14 @@ table, th, td {
   display: inline;
 }
 
-.actionButton{
-  width:125px;
-  margin: 0 auto;
-  display: inline;
+.submitInput {
+  margin-left: 90px;
 }
 
 input {
   margin-left: 10px;
 }
+
 select {
   margin-left: 10px;
 }
